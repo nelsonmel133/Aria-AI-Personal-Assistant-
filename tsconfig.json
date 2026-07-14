@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "paths": {
+      "@aria/tokens": ["./packages/tokens/src/index.json"],
+      "@aria/ui": ["./packages/ui/src/index.ts"],
+      "@aria/api-client": ["./packages/api-client/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

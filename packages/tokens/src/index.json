@@ -1,0 +1,97 @@
+{
+  "themes": {
+    "dusk": {
+      "bg": "#0F1115",
+      "surface": "#181B22",
+      "surfaceRaised": "#21252F",
+      "accent": "#E8C77A",
+      "accentCool": "#7AA7E8",
+      "textPrimary": "#F2F1ED",
+      "textMuted": "#8A8F9C",
+      "success": "#7FBF8A",
+      "danger": "#E07A6B",
+      "border": "#2A2E39"
+    },
+    "dawn": {
+      "bg": "#F5F0E8",
+      "surface": "#FDFAF4",
+      "surfaceRaised": "#FFFFFF",
+      "accent": "#B8860B",
+      "accentCool": "#3D6B9E",
+      "textPrimary": "#1A1814",
+      "textMuted": "#6B6560",
+      "success": "#4A8A56",
+      "danger": "#C0392B",
+      "border": "#E0D8CC"
+    },
+    "mono": {
+      "bg": "#000000",
+      "surface": "#0A0A0A",
+      "surfaceRaised": "#141414",
+      "accent": "#FFFFFF",
+      "accentCool": "#CCCCCC",
+      "textPrimary": "#FFFFFF",
+      "textMuted": "#888888",
+      "success": "#AAAAAA",
+      "danger": "#FFFFFF",
+      "border": "#333333"
+    },
+    "reef": {
+      "bg": "#0D1F2D",
+      "surface": "#142333",
+      "surfaceRaised": "#1C2F40",
+      "accent": "#5DC8BE",
+      "accentCool": "#F4845F",
+      "textPrimary": "#EDF4F7",
+      "textMuted": "#7EA8B8",
+      "success": "#6FCF97",
+      "danger": "#F4845F",
+      "border": "#1E3347"
+    }
+  },
+  "typography": {
+    "fontDisplay": "Fraunces, Georgia, serif",
+    "fontBody": "Inter, system-ui, sans-serif",
+    "fontMono": "'IBM Plex Mono', 'Fira Code', monospace",
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem"
+    },
+    "weight": {
+      "normal": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700"
+    }
+  },
+  "spacing": {
+    "1": "0.25rem",
+    "2": "0.5rem",
+    "3": "0.75rem",
+    "4": "1rem",
+    "5": "1.25rem",
+    "6": "1.5rem",
+    "8": "2rem",
+    "10": "2.5rem",
+    "12": "3rem",
+    "16": "4rem"
+  },
+  "radius": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "full": "9999px"
+  },
+  "motion": {
+    "fast": "120ms ease-out",
+    "default": "200ms ease-out",
+    "slow": "350ms ease-out"
+  }
+}
