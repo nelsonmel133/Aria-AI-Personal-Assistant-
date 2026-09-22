@@ -5,6 +5,9 @@
     "apps/*",
     "packages/*"
   ],
+  "overrides": {
+    "react-test-renderer": "18.2.0"
+  },
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
