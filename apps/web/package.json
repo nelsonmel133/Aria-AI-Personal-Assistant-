@@ -12,6 +12,9 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@aria/api-client": "*",
+    "@aria/tokens": "*",
+    "@aria/ui": "*",
     "@tanstack/react-query": "^5.56.2",
     "framer-motion": "^11.5.4",
     "next": "14.2.13",
