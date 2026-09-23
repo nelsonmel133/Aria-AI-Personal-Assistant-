@@ -3,7 +3,7 @@
 const nextConfig = {
   transpilePackages: ['@aria/api-client', '@aria/ui', '@aria/tokens'],
   experimental: {
-    typedRoutes: true,
+    typedRoutes: false,
   },
   webpack(config) {
     config.resolve.alias = {
