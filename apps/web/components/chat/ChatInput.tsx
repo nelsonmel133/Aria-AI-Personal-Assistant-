@@ -52,7 +52,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
     rec.lang = "en-US";
    rec.onresult = (e: any) => {
       const transcript = Array.from(e.results)
-        .map((r) => r[0].transcript)
+        .map((r: any) => r[0].transcript)
         .join("");
       setValue(transcript);
     };
