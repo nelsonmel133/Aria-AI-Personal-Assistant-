@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
+export default nextConfig;
+
 const nextConfig = {
-  transpilePackages: [],
+  transpilePackages: ['@aria/api-client', '@aria/ui', '@aria/tokens'],
   experimental: {
     typedRoutes: true,
   },
