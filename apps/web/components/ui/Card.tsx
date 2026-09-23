@@ -5,7 +5,8 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
   as?: "div" | "article" | "section" | "li";
 }
 
-export function Card({ raised = false, as: Tag = "div", className = "", ...props }: CardProps) {
+export function Card({ raised = false, as: asTag = "div", className = "", ...props }: CardProps) {
+  const Tag = asTag as any;
   return (
     <Tag
       className={[
