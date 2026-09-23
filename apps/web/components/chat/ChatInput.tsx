@@ -46,7 +46,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
     }
 
     const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition;
-    const rec: SpeechRecognition = new SR();
+    const rec = new SR();
     rec.continuous = false;
     rec.interimResults = true;
     rec.lang = "en-US";
