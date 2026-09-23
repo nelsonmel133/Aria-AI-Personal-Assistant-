@@ -1,14 +1,16 @@
-import { type HTMLAttributes } from "react";
+import { type ComponentPropsWithoutRef, type ElementType } from "react";
 
-interface CardProps extends HTMLAttributes<HTMLDivElement> {
+interface CardOwnProps {
   raised?: boolean;
-  as?: "div" | "article" | "section" | "li";
+  as?: "div" | "article" | "section" | "li" | "button";
 }
 
-export function Card({ raised = false, as: asTag = "div", className = "", ...props }: CardProps) {
-  const Tag = asTag as any;
+type CardProps = CardOwnProps & Omit<ComponentPropsWithoutRef<"div">, keyof CardOwnProps>;
+
+export function Card({ raised = false, as: Tag = "div", className = "", ...props }: CardProps) {
+  const Component = Tag as ElementType;
   return (
-    <Tag
+    <Component
       className={[
         "rounded-xl border border-border transition-all duration-default",
         raised ? "bg-surface-raised" : "bg-surface",

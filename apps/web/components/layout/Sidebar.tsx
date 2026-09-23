@@ -11,7 +11,7 @@ const NAV = [
   { href: "/tasks", label: "Tasks", icon: TasksIcon },
   { href: "/notes", label: "Notes", icon: NotesIcon },
   { href: "/settings", label: "Settings", icon: SettingsIcon },
-];
+] as const;
 
 export function Sidebar() {
   const pathname = usePathname();

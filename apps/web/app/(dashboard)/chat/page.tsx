@@ -81,7 +81,7 @@ export default function ChatPage() {
           {messages.length === 0 && (
             <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center">
               <p className="font-display text-3xl text-text-primary">
-                What's on your mind?
+                What&apos;s on your mind?
               </p>
               <p className="text-text-muted text-sm max-w-xs">
                 Aria can help you think, plan, remember, and act. Just start talking.
@@ -93,18 +93,14 @@ export default function ChatPage() {
                   "Remind me to call the dentist tomorrow at 9am",
                   "Help me draft a weekly plan",
                 ].map((prompt) => (
-                <button 
-                    key={prompt} 
-                    onClick={() => send(prompt)} 
-                    className="text-left w-full focus:outline-none"
-                >
-                   <Card
-                      className="px-3 py-2 text-sm text-text-muted hover:text-text-primary cursor-pointer hover:border-accent"
-                   >
-                      {/* Card inner contents */}
-                   </Card>
-                </button>
-
+                  <Card
+                    key={prompt}
+                    as="button"
+                    onClick={() => send(prompt)}
+                    className="px-3 py-2 text-sm text-text-muted hover:text-text-primary cursor-pointer hover:border-accent"
+                  >
+                    {prompt}
+                  </Card>
                 ))}
               </div>
             </div>
