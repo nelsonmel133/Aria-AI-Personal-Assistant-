@@ -50,7 +50,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
     rec.continuous = false;
     rec.interimResults = true;
     rec.lang = "en-US";
-    rec.onresult = (e) => {
+   rec.onresult = (e: any) => {
       const transcript = Array.from(e.results)
         .map((r) => r[0].transcript)
         .join("");
