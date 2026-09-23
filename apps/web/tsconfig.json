@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,13 +13,18 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [{ "name": "next" }],
-    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "@/*": ["./*"],
-      "@aria/tokens": ["./packages/tokens/src/index.json"],
-      "@aria/ui": ["./packages/ui/src/index.ts"],
-      "@aria/api-client": ["./packages/api-client/src/index.ts"]
+      "@aria/api-client": ["../../packages/api-client/src"],
+      "@aria/api-client/*": ["../../packages/api-client/src/*"],
+      "@aria/ui": ["../../packages/ui/src"],
+      "@aria/ui/*": ["../../packages/ui/src/*"],
+      "@aria/tokens": ["../../packages/tokens/src"],
+      "@aria/tokens/*": ["../../packages/tokens/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
