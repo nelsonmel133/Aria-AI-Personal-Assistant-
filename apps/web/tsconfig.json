@@ -18,7 +18,9 @@
         "name": "next"
       }
     ],
+   "baseUrl": ".",
     "paths": {
+      "@/*": ["./*"],
       "@aria/api-client": ["../../packages/api-client/src"],
       "@aria/api-client/*": ["../../packages/api-client/src/*"],
       "@aria/ui": ["../../packages/ui/src"],
