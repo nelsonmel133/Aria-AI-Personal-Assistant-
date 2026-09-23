@@ -93,14 +93,18 @@ export default function ChatPage() {
                   "Remind me to call the dentist tomorrow at 9am",
                   "Help me draft a weekly plan",
                 ].map((prompt) => (
-                  <Card
-                    key={prompt}
-                    as="button"
-                    onClick={() => send(prompt)}
-                    className="px-3 py-2 text-sm text-text-muted hover:text-text-primary cursor-pointer hover:border-accent"
-                  >
-                    {prompt}
-                  </Card>
+                <button 
+                    key={prompt} 
+                    onClick={() => send(prompt)} 
+                    className="text-left w-full focus:outline-none"
+                >
+                   <Card
+                      className="px-3 py-2 text-sm text-text-muted hover:text-text-primary cursor-pointer hover:border-accent"
+                   >
+                      {/* Card inner contents */}
+                   </Card>
+                </button>
+
                 ))}
               </div>
             </div>
